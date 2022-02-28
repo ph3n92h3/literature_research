@@ -1,0 +1,58 @@
+\documentclass[9 pt,makeindex]{beamer}
+\input{preamble.tex}
+
+% \usepackage{syntonly}
+% \syntaxonly %声明后，仅检查语法是否正确
+
+% \includeonly{声光可调谐（AOTFs）} %仅真正编译该文件
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Outline}
+
+    \tableofcontents
+\end{frame}
+%\section{逐篇介绍}
+%\sectionpage
+
+\section{窄带滤光片}
+
+\subsection{基于可调谐滤光片的显微光谱仪}
+\subsubsection{声光可调谐（AOTFs）}
+\include{texes/shengguangketiaoxie(AOTFs).tex}
+
+\subsection{窄带滤波器阵列}
+\subsubsection{金属-介质单腔}
+\include{texes/jinshu-jiezhidanqiang.tex}
+\subsubsection{升级版金属-介质单腔}
+\include{texes/shengjibanjinshu-jiezhidanqiang.tex}
+\subsubsection{128 通道滤光片阵列}
+\include{texes/128tongdaolvguangpianzhenlie.tex}
+\subsubsection{120 层蓝色滤光片}
+\include{texes/120cenglanselvguangpian.tex}
+\subsubsection{光子晶体}
+\include{texes/guangzijingti.tex}
+\subsubsection{超平面}
+\include{texes/chaopingmian.tex}
+
+\subsection{线性可变滤波器}
+\subsubsection{微环谐振器}
+\include{texes/weihuanxiezhenqi.tex}
+\subsubsection{厚度梯度}
+\include{texes/houdutidu.tex}
+\subsubsection{锥形布拉格波导}
+\include{texes/zhuixingbulagebodao.tex}
+
+
+\include{texes/Application_Acknowledgement.tex}
+
+\printindex
+\end{document}
+
+% 工程文件夹说明：
+% main.tex 文件是主文件，引入了序言、各个子 .tex 文件。
+% 每个 subsubsection 下是一两篇同系列论文，include 的文件名是我自己起的 subsubsection 的汉语拼音。
+% 图片在 figures/ 文件夹中，子 .tex 文件在 texes/ 文件夹中。

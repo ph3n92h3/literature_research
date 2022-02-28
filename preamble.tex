@@ -1,0 +1,55 @@
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{latexcolors}
+
+% 背景图片
+\usepackage{tikz}
+\pgfdeclareimage[height=\paperheight,width=\paperwidth]{myimage}{figures/Kohrvirab.jpg}
+\usebackgroundtemplate{\tikz\node[opacity=0.1] {\pgfuseimage{myimage}};}
+
+\usepackage{multicol}   %目录分栏
+
+\usepackage[space, hyperref, UTF8]{ctex}	%中文支持
+
+% 数理
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{esint}		% \oiint
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{extarrows}  	%长等号上写字\xlongequal{文字}
+\usepackage{physics}
+\usepackage{upgreek}    	%直立的希腊字母\upalpha
+\usepackage{bm}     		%加粗\bm{}
+\usepackage{slashed}    	%Dirac slash
+
+%插入 Mathematica 代码请先在当前目录下放入 mmacells.sty
+%\usepackage{mmacells}
+%\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}  %MATLAB 官方宏包
+% \usepackage{listings}		% 插入代码：已过时
+
+\usepackage{graphicx}   %插入图片的宏包
+\usepackage{float}      %设置图片浮动位置的宏包
+\usepackage{subfigure}  %插入多图时用子图显示的宏包
+
+%\usepackage[xllnames]{xcolor}
+
+%\usepackage[hidelinks]{hyperref}
+
+%插入 emoji 表情：使用 \LuaLaTeX，\Memoji{🎄}
+%\usepackage{metalogo}
+%\usepackage{fontspec}
+%\setmainfont{Comic Sans MS}
+%\newfontfamily\emojifont{Segoe UI Emoji}[Renderer=Harfbuzz]
+%\newcommand{\emoji}[1]{\emojifont #1}
+%\newcommand{\Memoji}[1]{\ifmmode \text{\emoji{#1}} \else \emoji{#1}\fi}
+
+\usetheme{Goettingen}
+\usecolortheme{crane}
+
+\title[文献调研]{2022寒假文献调研}
+\subtitle{光电器件中的波长选择}
+\author{冯哲}
+\date{\today}
+\institute{河海大学 理学院}
+%\titlegraphic{\includegraphics[width=0.17\textwidth]{ias.pdf}}

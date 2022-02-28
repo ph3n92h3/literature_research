@@ -1,0 +1,96 @@
+%\section{section name}
+%\subsection{subsection name}
+%\subsubsection{subsubsection name}
+%\section*{section* name}
+
+\begin{frame}[fragile]
+    \frametitle{frame title}
+    The context goes here.
+\end{frame}
+
+\begin{frame}[c]
+    \frametitle{itemize}
+    \begin{itemize}
+        \item The first
+        \item The second
+        \item The third
+        \item The fourth
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{enumerate}
+    \begin{enumerate}
+        \item The first
+        \item The second
+        \item The third
+        \item The fourth
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{description}
+    \begin{description}
+        \item[first item] description of the first
+        \item[second item] description of the second
+        \item[third item] description of the third
+        \item[fourth item] description of the fourth
+    \end{description}
+\end{frame}
+
+\begin{frame}
+    \frametitle{sample text}
+    \emph{sample text}\\
+    \textbf{sample text}\\
+    \textit{sample text}\\
+    \textsl{sample text}\\
+    \alert{sample text}\\
+    \textrm{sample text}\\
+    \textsf{sample text}\\
+    \textcolor{green}{sample text}\\
+    \structure{sample text}\\
+\end{frame}
+
+\begin{frame}
+    \frametitle{多栏显示}
+    \begin{columns}
+        \begin{column}{.3\textwidth}
+            First column text and/or code
+        \end{column}
+        \begin{column}{.7\textwidth}
+            Second column text and/or code
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{区块}
+    \begin{exampleblock}{Beamer 自带区块环境}
+        \begin{description}
+            \item[block] 普通环境
+            \item[theorem] 定理环境
+            \item[lemma] 引理环境
+            \item[proof] 证明环境
+            \item[corollary] 推论环境
+            \item[example] 示例环境
+            \item[alertblock] 警示环境
+            \item[exampleblock] 你现在看到的这个（绿色的）环境
+        \end{description}
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+    \frametitle{颜色主题}
+    颜色主题有三种，分别是 colortheme，inner color theme，outter color theme。 colortheme 控制着全部的颜色，inner color theme 控制着帧内一些元素的颜色，主要是 block，outter color theme 控制着 headline，footline，sidebar 等元素的颜色。使用的方法都是一致的。
+    \begin{exampleblock}{Beamer 中的颜色主题}
+        \begin{description}
+            \item[colortheme] albatross crane beetle dove fly seagull wolverine beaver
+            \item[inner color] lily orchid rose
+            \item[outter color] whale seahorse dolphin
+        \end{description}
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}[plain]
+    空白帧没有标题
+\end{frame}
